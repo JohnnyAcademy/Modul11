@@ -1,10 +1,23 @@
-body {background-color: linen;}
+/* Hovedtekst og linje 2 tekst */
 
+body { 
+
+    background-color: linen;
+    background-image: url("Tree.png");
+    background-repeat: no-repeat;
+    background-size:30em ;
+    background-position-x: right;
+    margin-right: 115px;
+    background-attachment: fixed;
+
+    z-index: -1 ;
+}
 .center{
     text-align: center;
 }
 #test{
     font-size: 1em;
+    z-index: 1;
 }
 p#P1{ 
    color: red; 
@@ -13,9 +26,12 @@ p#P1{
    margin-bottom: -15px;
 }
 p#P2{ 
-    float: right;
-    margin-right: 10em;
+    float: center;
+    margin-right: 2em;
     color: rgb(99, 2, 255); 
     font-size: 2em;
     margin-top: 15px;
  }
+ 
+ /* slutt */
+ 
