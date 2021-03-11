@@ -1,0 +1,21 @@
+body {background-color: linen;}
+
+.center{
+    text-align: center;
+}
+#test{
+    font-size: 1em;
+}
+p#P1{ 
+   color: red; 
+   font-size: 10rem;
+   margin-top: 0.2rem;
+   margin-bottom: -15px;
+}
+p#P2{ 
+    float: right;
+    margin-right: 10em;
+    color: rgb(99, 2, 255); 
+    font-size: 2em;
+    margin-top: 15px;
+ }
