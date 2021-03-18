@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eventhandlere</title>
+    <title>Eventhandlere</title>
 
 
 </head>
 
 <body>
+    
+    
     <h2> What can javascript do? </h2>
+   
     <p> javascript statments are sepraa sog a </p>
-    <button onclick="Klikk()">ClickMe</button>
+        <button onclick="Klikk()">ClickMe</button>
+        <div id="info"> Trykk på meg baby </div>
+        <button onclick="tell()">tell</button>
+
+    <script>
+        var tallA = 0;
+        var tekstA = 'TekstA';  
+        console.log(tallA, tekstA);
+
+        function  tell() {
+
+            var tallb = 0;
+            var tekstb = 'TekstB';
+
+            tallA++;
+            tallB++;
+            TekstA += '*';
+            tekstb += '*';
+
+            document.getElementById('info').innerHTML = 
+                'tallA=' + tallA '<br/>tallb=' + tallb + '<br/>TekstA=' 
+                + tekstA '<br/>TekstB=' + tekstb;
+        }
+              
 
 
-
-
+    </script>
 
 
     <script>
@@ -24,10 +49,16 @@
 
         function Klikk() {
 
-            alert('Dette skjer i funksjonen klikk');
+            alert('Dette skjer i funksjonen klikk 4');
+            
         }
 
 
+    </script>
+
+    <script 
+        src="eventhandlere.js"> 
+    
     </script>
 </body>
 </html>
