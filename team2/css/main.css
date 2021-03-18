@@ -1,0 +1,29 @@
+body { 
+    width: 850px;
+    height: 850px;
+}
+
+.hoved {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #222222;
+}
+
+.row1, .row2 {
+    background-color: rgb(78, 2, 255);
+    border: 1px solid lightyellow;
+    padding: 20px;
+    margin: 20px;
+    font-size: 7rem;
+    text-align: center;
+    width: 200px;
+    height:200px;
+}
+
+.row2 {
+
+    background-color: greenyellow
+
+}
+
+
