@@ -1,12 +1,13 @@
 body { 
+    margin: auto;
     width: 850px;
     height: 850px;
 }
 
 .hoved {
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #222222;
+    grid-template-columns: auto auto auto ;
+    background-color: #2c0b0b;
 }
 
 .row1, .row2 {
