@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Setninger</title>
+</head>
+<body>
+        <div id="app"></div>
+        
+        <script>
+            //model
+            let guessNumber = 54;
+            let secretNumber = 60;  
+            // wiew
+            UpdateWiew();
+            function UpdateWiew() {
+                let isCorrectOrNotText; 
+                if (guessNumber == secretNumber) {
+                    isCorrectOrNotText = `<b>Du har tippet riktig!</b>`;
+                } else {
+                    isCorrectOrNotText = `Du har ikke tippet riktig!`;
+                }
+                
+                document.getElementById('app').innerHTML = `
+                    <h2> Tipp-Tallet-Spillet</h2>
+
+                    Du tippet ${guessNumber}.<br/>
+                    ${isCorrectOrNotText}
+                 
+                 
+                 
+                     <input type="text" /><button>Tipp</button>
+
+                `;
+            
+            }
+
+            // controller
+
+
+
+
+
+        
+        
+        
+        </script>
+
+</body>
+    
+
+
+
+
+</html>
