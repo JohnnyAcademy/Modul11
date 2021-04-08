@@ -11,16 +11,21 @@
         
         <script>
             //model
-            let guessNumber = 54;
-            let secretNumber = 60;  
+            let guessNumber;
+            let secretNumber;  
+           
             // wiew
-            UpdateWiew();
             function UpdateWiew() {
+                const guessText =
                 let isCorrectOrNotText; 
                 if (guessNumber == secretNumber) {
                     isCorrectOrNotText = `<b>Du har tippet riktig!</b>`;
                 } else {
-                    isCorrectOrNotText = `Du har ikke tippet riktig!`;
+                    if(guessNumber<secretNumber){
+                            isCorrectOrNotText = `Du har tippet for lavt!`;
+                    }   else {
+                            isCorrectOrNotText = `Du har tippet for høyt`;
+                    }
                 }
                 
                 document.getElementById('app').innerHTML = `
@@ -32,13 +37,22 @@
                  
                  
                      <input type="text" /><button>Tipp</button>
-
+                     <button onclick="StartGame()">Start på Nytt</button>   
                 `;
             
             }
 
             // controller
+                startGame();
+                function StartGame() {
+                    guessNumber = null;
+                    secretNumber = Math.ceil(Math.random() * 100);
+                    UpdateWiew();
 
+
+                }
+            
+                
 
 
 
