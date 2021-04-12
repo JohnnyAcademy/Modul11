@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.14.1.css">
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.14.1.js"></script>
+    <script src="Controller.js"> </script>
+  <script>
+        var navn = "Johnny";
+        var password = "abc123";
+        var navn2 = "Marius";
+        var password2 = "hehe";
+      QUnit.test('Test1', function(assert) {
+        var expected = myFunction("yourName");
+        var actual = "Hello yourName";
+        assert.equal(actual, expected);
+      });
+        QUnit.test('Test2', function(assert) {
+        var usr = "vilde"; 
+        var psw = "vilde123";  
+        var expected = btnlogin();
+        var actual = '""';
+        assert.equal(actual, expected);
+      });
+
+
+
+ 
+ 
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

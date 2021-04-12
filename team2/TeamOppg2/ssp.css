@@ -22,6 +22,7 @@ h1{
 .Spiller{
     width: 150px;
     height: 150px;
+    
 }
 img{
     width:100%;
@@ -29,7 +30,7 @@ img{
 }
 #right, #left{
     display:inline-block;
-    margin-top: 150px;
+    margin-top: 5rem;
 }
 #left{
     float:left;
@@ -45,7 +46,6 @@ img{
     margin-right:auto;
     width:500px;
     height:400px;
-    border:solid black 2px;
 }
 
 #vinner, #spiller1, #spiller2{
@@ -53,27 +53,41 @@ img{
     text-align:center;
 }
 #infotekst{
+    color: rgb(14, 4, 160);
     text-align: center;
     float:none;
     margin-top:2em;
     margin-left:auto;
     margin-right:auto;
     width:50%;
+    border: 4px solid palegreen;
+    font-size: x-large;
+   
 }
 #vinner{
     float:center;
     margin-left:auto;
     margin-right:auto;
     width:200px;
-    height:200px;
+    height:175px;
+    border: 4px solid hotpink;
+    font-size: xx-large;
+}
+#spiller1, #spiller2{
+    display:relative;
+    margin-top:-6rem;
 }
 #spiller1{
     float:left;
-    width:50px;
-    height:50px;
+    width: 100px;
+    height:100px;
+    border: 4px dotted hotpink;
+    border-radius: 60px;
 }
 #spiller2{  
     float:right;
-    width:50px;
-    height:50px;
+    width:100px;
+    height:100px;
+    border: 4px dotted hotpink;
+    border-radius: 60px;
 }
