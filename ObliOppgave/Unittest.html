@@ -28,7 +28,7 @@
         pointsPerClick = 3;
         coronaClick = 0;
         doClick()
-        // kan også bruke let, men velger å bruke var for å prøve ut.
+        // kan også bruke 'let', men velger å bruke 'var' for å prøve ut.
         var expected = 3;
         var actual = points;
         assert.equal(actual, expected);
@@ -38,10 +38,10 @@
 
       QUnit.test('Test3', function(assert) {
         points = 0;
-        pointsPerClick = 5;
+        pointsPerClick = 5000;
         coronaClick = 0;
         doClick();
-        var expected = 5;
+        var expected = 5000;
         var actual = points;
         
         assert.equal(actual, expected);
