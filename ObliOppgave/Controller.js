@@ -13,8 +13,18 @@ function btnlogin()
 
 }
 
-function myFunction(){
-   return "Hello " + demo1;
-     
+// controller for afteLogin
+function doClick() {
+  points += pointsPerClick;
+  coronaClick = 1 - coronaClick;
+  afterLogin();
 }
 
+function størreMengde() {
+  if (points < 0) return;
+  points = 0;
+  pointsPerClick++;
+  afterLogin();
+
+
+}

@@ -1,13 +1,14 @@
 //model
 var navn = "Johnny";
-var password = "abc123";
-var navn2 = "Marius";
+var password = "123";
+var navn2 = "Therese";
 var password2 = "hehe";
-var usr = "vilde";
-var psw = "vilde123";
-var demo1 = "Therese";
+// afterLogin var
+var points = 0
+var pointsPerClick = 1;
+var coronaClick = 0;
 //View
-updateNow();
+updateNow()
 function updateNow()
 {
     document.getElementById("app").innerHTML=`
@@ -15,36 +16,33 @@ function updateNow()
             <h2>Logg inn med brukernavn og passord </h2>
             
             <br>
-            <input onchange="usr = this.value" 
+            <input 
             id="usr" class="form-controll" 
             placeholder="Brukernavn">
             
         </div>
             <div> 
-            <input onchange="psw = this.value" 
-            id="psw" 
-            class="form-controll" 
-            placeholder="Passord"> 
-           
-             </div>
+            <input 
+            id="psw" class="form-controll" placeholder="Passord"> 
+            </div>
         <div> 
             <button onClick="btnlogin()"
             class="btn btn-lg btn-success btn-block" 
-            type="submit" name="Roal">Logg inn</button>
+            type="submit">Logg inn</button>
             </div>
             <br>
-        <div>
-            <button id="Somalia2"
-            onClick="myFunction(demo1)"> Return verdi Knappen</button>
-        </div>
+    
     `;
 }
-    
-function afterLogin() 
-{
-    document.getElementById("app").innerHTML = `
-    
-    <p onClick="myFunction2()" id="demo"> Hei </p>
+    // afterLogin
+    function afterLogin() 
+{        var gjestClick = coronaClick == 0 ? '&#128169' : '	&#128100';
+        document.getElementById("app").innerHTML = `
+        
+        <h1 id="overSkrift"> CoronaCounter &#128169  </h1>
+            <div id="klatten" onClick="doClick()">${gjestClick}</div>
+            <div id="pointsInfo">${points}</div>
+            <button onclick="størreMengde(0)"> legg på +1x telling </button>
     `;
    
 }

@@ -4,7 +4,18 @@
 
 }
 
-#demo {
- color: magenta;
+#overSkrift  {
 
+    color: blue;
+    
+}
+#klatten {
+
+    font-size: 7rem;
+   
+}
+#pointsInfo {
+
+    font-size: 7rem;
+   
 }

@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Test Suite</title>
-<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.14.1.css">
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.15.0.css">
 <body>
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
-  <script src="https://code.jquery.com/qunit/qunit-2.14.1.js"></script>
+  <script src="https://code.jquery.com/qunit/qunit-2.15.0.js"></script>
     <script src="Controller.js"> </script>
-  <script>
-        var navn = "Johnny";
-        var password = "abc123";
-        var navn2 = "Marius";
-        var password2 = "hehe";
+  
+    <script>
+      function afterLogin(){};
       QUnit.test('Test1', function(assert) {
-        var expected = myFunction("yourName");
-        var actual = "Hello yourName";
+        points = 0;
+        pointsPerClick = 1;
+        coronaClick = 0;
+        doClick();
+        var expected = 1;
+        var actual = points;
+        
+        assert.equal(actual, expected);
+
+      });
+
+      
+      QUnit.test('Test2', function(assert) {
+        points = 0;
+        pointsPerClick = 3;
+        coronaClick = 0;
+        doClick()
+        // kan også bruke let, men velger å bruke var for å prøve ut.
+        var expected = 3;
+        var actual = points;
+        assert.equal(actual, expected);
+
+
+      });
+
+      QUnit.test('Test3', function(assert) {
+        points = 0;
+        pointsPerClick = 5;
+        coronaClick = 0;
+        doClick();
+        var expected = 5;
+        var actual = points;
+        
         assert.equal(actual, expected);
       });
-        QUnit.test('Test2', function(assert) {
-        var usr = "vilde"; 
-        var psw = "vilde123";  
-        var expected = btnlogin();
-        var actual = '""';
-        assert.equal(actual, expected);
-      });
+
+       // function doClick() {
+       // points += pointsPerClick;
+       // coronaClick = 1 - coronaClick;
+       // afterLogin();
 
 
+    </script>
 
- 
- 
- </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+  
+  </body>
+  
+  
+  
