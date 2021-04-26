@@ -42,7 +42,7 @@ function updateNow()
         <h1 id="overSkrift"> CoronaCounter &#128169  </h1>
             <div id="klatten" onClick="doClick()">${gjestClick}</div>
             <div id="pointsInfo">${points}</div>
-            <button onclick="størreMengde(0)"> legg på +1x telling </button>
+            <button onclick="størreMengde(5)"> legg på +1x telling </button>
     `;
    
 }

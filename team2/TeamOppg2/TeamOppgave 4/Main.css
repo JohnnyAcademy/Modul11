@@ -1,0 +1,32 @@
+#hero {
+    display: block;
+    float:left;
+    width:  150px;
+    height: 200px;
+}
+
+#boss {
+    display: block;
+    width:  150px;
+    height: 200px;
+    background-color: black;
+    float:right;
+    margin-right:10rem;
+    
+}
+
+.healthBar { 
+    
+    width: 2rem;
+    float:right;
+    font-size: larger;
+
+    
+}
+
+img {
+    width: 250px;
+    height: 300px;
+
+}
+

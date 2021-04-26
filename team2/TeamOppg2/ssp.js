@@ -64,7 +64,7 @@ function p2Choose(mittvalg, valg)
     else return;
 }
 function winner(){
-    //1 er stein 2 er saks  3 er papir
+    //1 er stein 2 er saks 3 er papir
     if((p1==1 && p2==1) || (p1==2 && p2==2) || (p1==3 && p2==3)){
         vinner="uavgjort";
     }

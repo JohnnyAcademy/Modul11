@@ -20,8 +20,8 @@ function doClick() {
   afterLogin();
 }
 
-function størreMengde() {
-  if (points < 0) return;
+function størreMengde(test) {
+  if (points < test) return;
   points = 0;
   pointsPerClick++;
   afterLogin();

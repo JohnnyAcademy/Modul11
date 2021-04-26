@@ -6,9 +6,11 @@
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="https://code.jquery.com/qunit/qunit-2.15.0.js"></script>
-    <script src="Controller.js"> </script>
+    <script src="Controller.js"> </script>¨
+    <script src="Main.js"></script>
   
     <script>
+      function updateNow(){};
       function afterLogin(){};
       QUnit.test('Test1', function(assert) {
         points = 0;
@@ -46,6 +48,24 @@
         
         assert.equal(actual, expected);
       });
+
+      
+      QUnit.test('Test4', function(assert) {
+      
+        var navn2 = "Therese";
+        var password2 = "hehe";
+        var usr = "Therese";
+        var password2 = "hehe"
+
+        btnlogin();
+      
+        var expected = true;
+      
+        assert.equal(btnlogin, expected);
+
+      });
+
+
 
        // function doClick() {
        // points += pointsPerClick;
