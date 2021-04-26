@@ -9,7 +9,7 @@ var showOrNot="disabled";
 let showText="";
 let currentNumber=10;
 // view
-show();
+
 function show() {
     let svgInnerHtml = '';
     for (let i = 0; i < numbers.length; i++) {
@@ -23,7 +23,7 @@ function show() {
         <br />
         Verdi:
         <input type="number" min="1" max="10" oninput="inputValue = this.value" />
-        <button>Legg til stolpe</button>
+        <button onclick="leggTil()">Legg til stolpe</button>
         <button ${showOrNot} onclick="Endre()" >Endre valgt stolpe</button><br />
         <button ${showOrNot} onclick="Fjerne()" >Fjerne valgt stolpe</button>
         <p>${showText}</p>
@@ -48,4 +48,6 @@ function calcColor(min, max, val) {
     var colString = "hsl(" + ((curPercent * (maxHue - minHue)) + minHue) + ",100%,50%)";
     return colString;
 }
+
+// Controller
 

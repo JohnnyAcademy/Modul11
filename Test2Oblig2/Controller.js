@@ -49,6 +49,15 @@ function Fjerne() {
   
 }
 
+function leggTil(){
+
+    if(inputValue <= 0 || inputValue >= 11){
+        alert("Maks mellom 1 og 10")}
+    else {inputValue = parseInt (inputValue);
+    numbers.push(inputValue);
+     inputValue = null;
+    show();};
+}
 
 
 // function Fjerne()

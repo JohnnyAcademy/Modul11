@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.15.0.css">
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.15.0.js"></script>
+  <script src="Controller.js"> </script>¨
+  <script src="Main.js"></script>
+
+
+
+
+  <script>
+     function show(){};
+
+        QUnit.test('Tester om array blir lagt til', function (assert) {
+        inputValue = 5;
+        leggTil();
+
+        assert.equal(numbers.length, 6);
+  });
+    
+
+   QUnit.test('Teste endre stolpe', function (assert) {
+        inputValue = 2;
+        chosenBar =2;
+        Endre();
+
+        assert.equal(numbers[1], 2);
+  });
+    
+
+  QUnit.test('teste slette stolpe', function (assert) {
+        clickedOn();
+        Fjerne();
+
+        assert.equal(numbers.length, 5);
+  });
+    
+
+  QUnit.test('Valgt stolpe', function (assert) {
+        clickedOn(1);
+        
+
+        assert.equal(chosenBar,1);
+  });
+    
+  QUnit.test('Valgt stolpe 2', function (assert) {
+        clickedOn(2);
+        
+
+        assert.equal(chosenBar , 2);
+  });
+  </script>
+
+
+
+ 
+    <!-- QUnit.test('Test2', function(assert) {
+        points = 0;
+        pointsPerClick = 3;
+        coronaClick = 0;
+         doClick()
+    //  kan også bruke 'let', men velger å bruke 'var' for å prøve ut.
+        var expected = 3;
+         var actual = points;
+        assert.equal(actual, expected);
+
+
+  }); -->
+
+
+ <!--   function leggTil(){
+
+         if(inputValue <= 0 || inputValue >= 11){
+         alert("")}
+         else {inputValue = parseInt (inputValue);
+         numbers.push(inputValue);
+         inputValue = null;
+            show();};
+} -->
+
+<!-- QUnit.test('Test4', function(assert) {
+      
+    var navn2 = "Therese";
+    var password2 = "hehe";
+    var usr = "Therese";
+    var password2 = "hehe"
+
+    btnlogin();
+  
+    var expected = true;
+  
+    assert.equal(btnlogin, expected);
+
+  });
+ -->
+</body>
