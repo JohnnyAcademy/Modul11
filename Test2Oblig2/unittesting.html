@@ -47,12 +47,10 @@
         assert.equal(chosenBar,1);
   });
     
-  QUnit.test('Valgt stolpe 2', function (assert) {
+  QUnit.test('Valgt stolpe 2 ganger', function (assert) {
         clickedOn(2);
-        
-
-        assert.equal(chosenBar , 2);
-        clickedOn();
+        clickedOn(2);
+        assert.equal(chosenBar,'Ingen');
   });
   </script>
 
