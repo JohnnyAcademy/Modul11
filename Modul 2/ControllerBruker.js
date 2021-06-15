@@ -17,8 +17,23 @@ function convert(valutaKode) {
 }
 
 function chosenValutaCode(selectedCode){
+    console.log(selectedCode)
+    model.inputs.valutaIndex = parseInt(selectedCode)
 
-    model.inputs.valutaNavn = selectedCode
+
+}
+
+function remove(){
+
+    model.valuta.splice(model.inputs.valutaIndex, 3);
+    uptadeView();
+}
 
 
+
+
+function leggTilValuta() {
+ 
+    model.ekstraValuta.valutaIndex = parseInt(selectedCode)
+    uptadeView();
 }
