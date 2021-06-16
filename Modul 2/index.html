@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="model.js"></script>
-    <script src="ViewAdminPage.js"></script>
-    <script src="ViewBrukerPage.js"></script>
-    <script src="ControllerAdmin.js"></script>
-    <script src="ControllerBruker.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Currency Converter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="model.js"></script>
+        <script src="ViewAdminPage.js"></script>
+        <script src="ViewBrukerPage.js"></script>
+        <script src="ControllerAdmin.js"></script>
+        <script src="ControllerBruker.js"></script>
 </head>
+
 <body>
         <h1> Simple Currency Converter</h1>
 
         <div id="app"></div>
         <div id="app2"></div>
         <script>
-        function updateView2(){
-if (model.app.currentPage == 'bruker') updateViewBrukerPage();
-if (model.app.currentPage == 'admin') updateViewAdminPage();
-        }
-        updateView2();
+                function updateView2() {
+                        if (model.app.currentPage == 'bruker') updateViewBrukerPage();
+                        if (model.app.currentPage == 'admin') updateViewAdminPage();
+                }
+                updateView2();
         </script>
 
 
 
-    
+
 </body>
+
 </html>

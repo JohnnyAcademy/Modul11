@@ -7,7 +7,11 @@ function updateViewBrukerPage() {
         <br>
         <select onChange="chosenValutaCode(this.value)">
             ${GetValutaKode()}
-        </select>`;
+        </select>
+        
+    
+                
+        `;
     // Input : 50NOK til USD; model.valuta.Pris * NOK
     // F.eks en div som viser resultatet.
 }
@@ -18,9 +22,9 @@ function uptadeView() {
 
 }
 
-function GetValutaKode(){
+function GetValutaKode() {
     let html = '';
-    for(let index = 0; index < model.valuta.length; index++){
+    for (let index = 0; index < model.valuta.length; index++) {
         html += `<option value="${index}">${model.valuta[index].Kode}</option>`;
     };
     return html;

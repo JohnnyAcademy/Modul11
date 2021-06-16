@@ -4,21 +4,15 @@ const model = {
         currentPage: 'bruker',
     },
 
+
+
     KursDato: [{ id: 2021, valutaKursDato: '2021-06-04' }],
 
     kalkulertVerdi: 0,
 
 
-    ekstraValuta: [
-        {
-            valutaNavn: "Vietnamesiske dong",
-            Kode: "VND",
-            Pris: 0.0363,
-            KursDato: 2021,
 
-        }
-
-    ],
+    
 
 
     valuta: [
@@ -52,8 +46,6 @@ const model = {
         Kode: "",
         Pris: 0,
         KursDato: "",
-
-
     },
 
     // Admin legg til, endre og slette funksjoner

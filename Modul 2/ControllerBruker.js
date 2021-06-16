@@ -13,7 +13,7 @@ function convert(valutaKode) {
          
         }
     }
-    uptadeView()
+    uptadeView();
 }
 
 function chosenValutaCode(selectedCode){
@@ -31,9 +31,3 @@ function remove(){
 
 
 
-
-function leggTilValuta() {
- 
-    model.ekstraValuta.valutaIndex = parseInt(selectedCode)
-    uptadeView();
-}

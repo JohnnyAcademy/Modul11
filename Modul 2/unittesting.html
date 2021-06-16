@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+  <!-- <script src="model.js"></script> -->
+  <script src="ControllerAdmin.js"></script>
+  <script src="ControllerBruker.js"></script>
+  
+
+
+</body>
+
+
+<script>
+  // model
+  let model;
+
+  // dummy view
+  function uptadeView() { }
+  function updateViewAdminPage() { }
+  function updateViewBrukerPage() { }
+
+
+  QUnit.test('leggTil', function (assert) {
+    // arrange
+    model = {
+      inputs: {
+        Kode: 'DKK',
+      },
+      valuta: [],
+    };
+
+    // act
+    leggTilValuta()
+
+    // assert
+    assert.equal(model.valuta.length, 1);
+    assert.equal(model.valuta[0].Kode, 'DKK');
+  });
+
+  QUnit.test('leggTil - blank kode', function (assert) {
+    // arrange
+    model = {
+      inputs: {
+        Kode: '',
+      },
+      valuta: [],
+    };
+
+    // act
+    leggTilValuta()
+
+    // assert
+    assert.equal(model.valuta.length, 0);
+  });
+
+  QUnit.test('test rør', function (assert) {
+    // arrange
+
+
+
+    // act
+    endreValutaKodeNavn()
+    //assert
+    assert.equal()
+  });
+  
+  
+  QUnit.test('sjekk att sletter', function (assert){
+      // arrange
+    model = {
+        inputs: {
+            Kode:'',
+        },
+        valuta: [],
+    },
+  
+    // act
+    remove()
+
+    //assert
+    assert.equal(model.valuta.length, 0);
+
+  });
+
+
+
+
+
+
+
+
+</script>
